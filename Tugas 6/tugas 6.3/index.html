@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 1000px;
+        padding: 20px;
+        margin: 20px auto;
+        background-color: salmon;
+        color: white;
+    }
+    .header{
+        width: 1000px;
+        height: 100px;
+        margin: 20px 0;
+        text-align: center;
+        font: 20px/100px arial,sans-serif; 
+        background-color: lightskyblue;
+    }
+    .aside {
+        float: left;
+        width: 200px;
+        height: 400px;
+        margin-right:20px ;
+        margin-bottom: 20px;
+        text-align: center;
+        font: 20px/400px arial,sans-serif; 
+        background-color: blue;
+    }
+    .article {
+        width: 780px;
+        height: 400px;
+        padding: 20px;
+        box-sizing: border-box;
+        float: left;
+        background-color: red;
+        text-align: center;
+        font: 20px/200px arial,sans-serif; 
+    }
+    .main{
+        display: flex;
+    }
+    .foto{
+        margin: 0 20px;
+        margin-top:-40px;
+    }
+    .footer {
+        clear: left;
+        width: 1000px;
+        height: 100px;
+        background: lightskyblue;
+        text-align: center;
+        font: 20px/100px arial,sans-serif; 
+    }
+    
+</style>
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <aside class="aside">Aside</aside>
+        <article class="article">Article
+            <div class="main">
+                <div class="foto"><img src="foto1.png" alt="" width="205" height="205" ></div>
+                <div class="foto" ><img src="foto2.png" alt="" width="205" height="205"></div>
+                <div class="foto"><img src="foto3.png" alt="" width="205" height="205"></div>
+            </div>
+        </article>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

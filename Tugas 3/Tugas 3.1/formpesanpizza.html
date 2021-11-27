@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan pizzamu sekarang!</title>
+</head>
+<body>
+    <div style="width: 42%; margin: auto;"> 
+    <form action="index.html" method="post">
+    <fieldset>
+    <legend>Pesan Pizzamu Sekarang!</legend>
+    <h2>Black Goose Bistro | Pizza-on-Demand</h2>
+    <p>Our 12" wood-fired pizzas are available for delivery. Build your pizza and we'll deliver it within an hour</p>
+    <p>Your Information</p>
+        <label for="namaku">Name :</label>
+        <input type="text" name="customername" id="namaku" placeholder="ihsan">
+        <br>
+        Alamat :<textarea cols="21" rows="1" name="address"></textarea>
+        <br>
+        <label>Telephone Number :</label>
+        <input type="number" name="telephone"> 
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+    <br>
+    <p>Delivery Instruction:</p>
+        <textarea cols="40" rows="3" maxlength="400" name="instructions"></textarea>
+    <h3>Design Your dream Pizza</h3>
+    <p>Pizza specs</p>
+    <p>Crust (Choose One)</p>
+        <input type="radio" name="crust" value="Classic White">Classic White    
+        <br>        
+        <input type="radio" name="jenis pilihan" value="Multi Grain">Multi Grain
+        <br>    
+        <input type="radio" name="jenis pilihan" value="Cheese-stuffed crust" checked>Cheese-stuffed crust
+        <br>
+        <input type="radio" name="jenis pilihan" value="Gluten-free" checked>Gluten-free
+       <br>
+    <p>Toppings (Choose as many as you want):</p>
+        <input type="checkbox" name="toppings{}" value="red sauce">Red sauce 
+        <br>
+        <input type="checkbox" name="topping" value="rWhite sauce">White sauce
+        <br>
+        <input type="checkbox" name="topping" value="Mozarella sauce">Mozarella sauce
+        <br>
+        <input type="checkbox" name="topping" value="Pepperoni">Pepperoni
+        <br>
+        <input type="checkbox" name="topping" value="Mushrooms">Mushrooms
+        <br>
+        <input type="checkbox" name="topping" value="Peppers">Peppers
+        <br>
+        <input type="checkbox" name="topping" value="Anchovies">Anchovies
+        <br>
+    <p>Number</p>
+    <label for="jumlahpemesanan">How manny pizzas:</label>
+    <select id="jumlahpemesanan" name="number">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+    <br>
+    <button class="submit" type="submit">
+       <a href="index.html">bring me at pizza</a>
+    </button>
+        <input type="reset" value="reset">       
+    </fieldset>
+    </form>
+    </div>
+</body>
+</html>

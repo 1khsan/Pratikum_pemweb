@@ -1,0 +1,158 @@
+body{
+    color: white;
+    font: 14px/25px arial, sans-serif;  
+    background-image: url("bananas.png");
+}
+.container{
+    width: 800px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #078cad;
+}
+.nav{
+    width: 100%;
+    height: 30px;
+    background: salmon;
+}
+.nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+.nav a:hover{
+    color: white;
+    background: blue;
+}
+.table
+{
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 10px;
+}
+.table img{
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+.nama{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.kategori{
+    text-align: right;
+}
+.kategori a{
+    color: azure;
+}
+.kategori a:hover{
+    color: yellow;
+    background: green;
+}
+.main{
+    line-height: 30px;
+}
+.main a{
+    text-decoration: none;
+    color: black;
+}
+.main a:hover{
+    background: blue;
+    color: white;
+}
+.main .paragraf{
+    text-indent: 20px;
+}
+
+
+.video video{
+    height: 200px;
+    width: 200px;
+    float: left;
+    margin-right: 15px;
+    box-sizing: border-box;
+ }
+.penilaian{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+.penilaian .kotak{
+    height: 70px;
+    width: 70px;
+    background-color: salmon;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 70px;
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid black;
+    box-sizing: border-box;
+    
+}
+.kotak a{
+    text-decoration: none;
+    color: lightblue
+}
+.kotak a:hover{
+    background: blue;
+    color: white;
+}
+.lampiran{
+    margin-top: 30px;
+    margin-right: 15px;
+    box-sizing: border-box;
+}
+
+.tabel{
+    width: 200px;
+}
+.lampiran table a{
+    color: white;
+}
+
+.footerke2{
+    background-color: #8b8989;
+    height: 30px;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+.footerke2 .copyright {
+    font-size: 12px;
+    text-align: center;
+   
+}
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

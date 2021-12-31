@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			.form {
+				width: 40%;
+				border-radius: 20px;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<form action="" class="form">
+			<fieldset style="border-radius: 30px">
+				<legend>Kurs Rupiah - Mata Uang Asing</legend>
+				<table border="1">
+					<tr>
+						<th>Masukan Nilai</th>
+						<th>Valas</th>
+						<th>Nilai Rupiah</th>
+					</tr>
+					<tr style="height: 60px">
+						<td>
+							<input
+								type="number"
+								id="input_data"
+								value=""
+								onchange="total()"
+							/>
+						</td>
+						<td>
+							<select name="" id="valas" onchange="total()">
+								<option disabled selected>Pilih</option>
+								<option value="dollar_amerika">Dollar Us</option>
+								<option value="dollar_singapura">Dollar Singapura</option>
+								<option value="ringgit_malaysia">Ringgit</option>
+								<option value="yen_jepang">Yen</option>
+								<option value="euro_unieropa">Euro</option>
+								<option value="riyal_arab">Riyal Arab Saudi</option>
+							</select>
+						</td>
+						<td><input id="nilai_rupiah"></td>
+					</tr>
+				</table>
+			</fieldset>
+		</form>
+		<script>
+			function total() {
+				const DOLLAR_US = 9915;
+				const DOLLAR_SNGPR = 13472;
+				const RINGGIT = 874;
+				const YEN = 120;
+				const EURO = 15888;
+				const RIYAL = 3592;
+				let inputan = document.getElementById("input_data").value;
+				let kurs = document.getElementById("valas").value;
+				let format = new Intl.NumberFormat('id-ID');
+				if (kurs == "dollar_amerika") {
+					rupiah = inputan * DOLLAR_US;
+				} else if (kurs == "dollar_singapura") {
+					rupiah = inputan * DOLLAR_SNGPR;
+				} else if (kurs == "ringgit_malaysia") {
+					rupiah = inputan * RINGGIT;
+				} else if (kurs == "yen_jepang") {
+					rupiah = inputan * YEN;
+				} else if (kurs == "eueuro_unieroparo") {
+					rupiah = inputan * EURO;
+				} else if (kurs == "riyal_arab") {
+					rupiah = inputan * RIYAL;
+				}
+				let hasil = document.getElementById("nilai_rupiah");
+				hasil.value = "Rp. " + format.format(rupiah);
+			}
+		</script>
+	</body>
+</html>
